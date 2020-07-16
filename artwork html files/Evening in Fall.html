@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/SundayMorning.css">
+    <link rel="stylesheet" href="https://use.typekit.net/sxg7krs.css"> 
+    <link rel="stylesheet" href="https://use.typekit.net/sxg7krs.css">
+    <link rel="icon" href="/images/iceberg-logo.svg">
+    <title>Ella Juengst | Home</title>
+</head>
+
+<body id="bod">
+    <nav id="overlay">
+        <img src="/images/x.svg" class="close-btn" id="close-menu">
+        <ul>
+            
+            <li>
+                <a href="/artwork.html" class="menu-item">artwork</a>
+                <span>traditional and digital works</span>
+            </li>
+            <li>
+                <a href="/animation.html" class="menu-item">animation</a>
+                <span>original 2d animated shorts</span>
+                
+            </li>
+            <li>
+                <a href="/design.html" class="menu-item">design</a>
+                <span>web design, character design, and branding</span>
+            </li>
+            <li>
+                <a href="/about.html" class="menu-item">about</a>
+                <span>have a commission or request? want to learn more about me? click here!</span>
+            </li>
+        </ul>
+    </nav>
+    <div id="bg">
+
+        <header>
+            <a href="/index.html"><img src="/images/Logo.svg" class="logo"></a>
+            <img src="/images/Menu.svg" class="menu-btn" id="open-menu">
+        </header>
+
+        <section class="title">
+            <h1>evening in fall</h1>
+            <h2>medium: acrylic paint<br>date: october 2017</h2>
+        </section>
+
+        <div class="container">
+            <img src="/artwork/Evening in Fall_Ella Juengst_resized.jpg" class="artwork"></img>
+        </div>
+            
+    </div>
+
+        
+
+
+    <script>
+        var overlay = document.getElementById('overlay');
+        var closeMenu = document.getElementById('close-menu');
+        var openMenu = document.getElementById('open-menu');
+        var bod = document.getElementById('bod');
+        
+
+        openMenu.addEventListener('click', function() {
+            overlay.classList.add('show-menu');
+            bod.classList.add('no-scroll');
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }); 
+
+        closeMenu.addEventListener('click', function() {
+            overlay.classList.remove('show-menu');
+            bod.classList.remove('no-scroll');
+        }); 
+
+    </script>
+
+</body>
+
+
+
+</html>

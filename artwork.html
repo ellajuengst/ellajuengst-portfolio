@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/artwork.css">
+    <link rel="stylesheet" href="https://use.typekit.net/sxg7krs.css"> 
+    <link rel="stylesheet" href="https://use.typekit.net/sxg7krs.css">
+    <link rel="icon" href="images/iceberg-logo.svg">
+    <title>ella juengst | artwork</title>
+</head>
+
+<body id="me">
+    <nav id="overlay">
+        <img src="images/x.svg" class="close-btn" id="close-menu">
+        <ul>
+            
+            <li>
+                <a href="artwork.html" class="menu-item">artwork</a>
+                <span>traditional and digital works</span>
+            </li>
+            <li>
+                <a href="animation.html" class="menu-item">animation</a>
+                <span>original 2d animated shorts</span>
+                
+            </li>
+            <li>
+                <a href="design.html" class="menu-item">design</a>
+                <span>web design, character design, and branding</span>
+            </li>
+            <li>
+                <a href="about.html" class="menu-item">about</a>
+                <span>have a commission or request? want to learn more about me? click here!</span>
+            </li>
+        </ul>
+    </nav>
+    
+    <div id="bg">
+        
+
+        <header>
+            <a href="index.html"><img src="images/Logo.svg" class="logo"></a>
+            <img src="images/Menu.svg" class="menu-btn" id="open-menu">
+        </header>
+
+        <section class="bun">
+            <img src="images/jumping bunny.svg" class="bunny">
+        </section>
+
+        <section class="title">
+            <h1>artwork</h1>
+            <h2>traditional and digital works. click a piece to find out more information.</h2>
+        </section>
+
+        <section class="pol">
+            <img src="images/standing polar bear.svg" class="polar">
+        </section>
+
+        <div class="gallery">
+            <div class="box">
+                <a href="artwork html files/RogueWave.html"><img src="artwork/Rogue Wave.jpg" class="artwork"></a>
+            </div>
+            <div class="box">
+                <a href="artwork html files/SundayMorning.html"><img src="artwork/Sunday Morning_Ella Juengst_resized.jpg" class="artwork"></a>
+            </div>
+            <div class="box">
+                <a href="/artwork html files/Afternoon at the Scott House.html"><img src="artwork/Afternoon at the Scott House_Ella Juengst_resized.jpg" class="artwork"></a>
+            </div>
+            <div class="box">
+                <a href="/artwork html files/Curiousity.html"><img src="artwork/Curiousity_Ella Juengst_resized.jpg" class="artwork"></a>
+            </div>
+            <div class="box">
+                <a href="/artwork html files/Evening in Fall.html"><img src="artwork/Evening in Fall_Ella Juengst_resized.jpg" class="artwork"></a>
+            </div>
+            <div class="box">
+                <a href="/artwork html files/Eye.html"><img src="artwork/Eye_Ella Juengst_resized.jpg" class="artwork"></a>
+            </div>
+            <div class="box">
+                <a href="/artwork html files/MegDog.html"><img src="artwork/Meg's Dog 2.jpg" class="artwork"></a>
+            </div>
+            <div class="box">
+                <a href="/artwork html files/From Below.html"><img src="artwork/From Below_Ella Juengst_resized.jpg" class="artwork"></a>
+            </div>
+            <div class="box">
+                <a href="/artwork html files/Ivy's Bed.html"><img src="artwork/Ivy's Bed_Ella Juegnst_resized.jpg" class="artwork"></a>
+            </div>
+            <div class="box">
+                <a href="/artwork html files/The Side Room.html"><img src="artwork/The Side Room_Ella Juengst_2018_resized.jpg" class="artwork"></a>
+            </div>
+            <div class="box">
+                <a href="/artwork html files/Napping in Petoskey.html"><img src="artwork/Napping in Petoskey_Ella Juengst_resized.jpg" class="artwork"></a>
+            </div>
+            <div class="box">
+                <a href="/artwork html files/National Gallery of Art.html"><img src="artwork/National Gallery of Art_Ella Juengst_resized.jpg" class="artwork"></a>
+            </div>
+            <div class="box">
+                <a href="/artwork html files/Scotland Greenhouse.html"><img src="artwork/Scotland Greenhouse_Ella Juengst_resized.jpg" class="artwork"></a>
+            </div>
+            <div class="box">
+                <a href="/artwork html files/Twisted.html"><img src="artwork/Twisted_Ella Juengst_resized.jpg" class="artwork"></a>
+            </div>
+
+            
+        </div>
+
+        
+
+    </div>
+
+    <script>
+        var overlay = document.getElementById('overlay');
+        var closeMenu = document.getElementById('close-menu');
+        var openMenu = document.getElementById('open-menu');
+        var bod = document.getElementById('me');
+        
+
+        openMenu.addEventListener('click', function() {
+            overlay.classList.add('show-menu');
+            bod.classList.add('no-scroll');
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }); 
+
+        closeMenu.addEventListener('click', function() {
+            overlay.classList.remove('show-menu');
+            bod.classList.remove('no-scroll');
+        }); 
+
+
+    </script>
+
+</body>
+
+
+
+</html>
