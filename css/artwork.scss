@@ -294,6 +294,7 @@ body {
             }
 
         .polar {
+            width: 10vw;
             @include tablet {
                 width: 6vw;
             }
