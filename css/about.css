@@ -500,6 +500,7 @@ body input.text,
 body input[type="text"],
 body input[type="button"],
 body input[type="submit"],
+body input[type="email"],
 body .input-checkbox {
   -webkit-appearance: none;
   border-radius: 0;
