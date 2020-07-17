@@ -115,7 +115,6 @@ body nav ul {
   body nav ul {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (25%)[4];
         grid-template-columns: repeat(4, 25%);
     width: 90%;
   }
