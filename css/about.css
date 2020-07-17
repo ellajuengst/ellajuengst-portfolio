@@ -482,6 +482,7 @@ body .status-text {
 
 body .links-header {
   font-size: 2em;
+  margin-top: .3em;
 }
 
 body .link {

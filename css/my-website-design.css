@@ -388,6 +388,10 @@ body .ill {
           justify-content: center;
 }
 
+body .ill img {
+  width: 70%;
+}
+
 @media (min-width: 768px) {
   body .ill img {
     width: 20vw;
