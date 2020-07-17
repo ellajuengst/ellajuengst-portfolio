@@ -384,8 +384,10 @@ body .ill {
           justify-content: center;
 }
 
-body .ill img {
-  width: 20vw;
+@media (min-width: 768px) {
+  body .ill img {
+    width: 20vw;
+  }
 }
 
 body .tall img {

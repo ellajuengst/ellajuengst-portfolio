@@ -47,6 +47,9 @@ body header {
 
 body header .logo {
   width: 45px;
+  font-family: objektiv-mk2, sans-serif;
+  font-weight: 10;
+  font-style: normal;
 }
 
 @media (min-width: 768px) {

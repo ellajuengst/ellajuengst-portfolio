@@ -341,7 +341,13 @@ body {
    }
 
    .ill img {
-       width: 20vw;
+
+       
+       
+        @include tablet {
+            width: 20vw;
+       }
+       
     }
 
    .tall img {
