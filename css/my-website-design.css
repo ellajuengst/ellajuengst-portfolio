@@ -309,7 +309,7 @@ body .image-section .fonts {
   }
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 768px) {
   body .image-section .colors {
     width: 50%;
   }
@@ -326,7 +326,7 @@ body .image-section .buttons img {
   width: 80%;
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 768px) {
   body .image-section .buttons img {
     width: 60%;
   }
@@ -388,7 +388,7 @@ body .iceberg img {
   width: 80%;
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 768px) {
   body .iceberg img {
     width: 60%;
   }
