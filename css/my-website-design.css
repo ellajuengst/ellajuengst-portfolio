@@ -230,6 +230,7 @@ body h1 {
   body h1 {
     font-size: 2.3em;
     letter-spacing: 2px;
+    text-align: center;
   }
 }
 
@@ -314,9 +315,10 @@ body .image-section .fonts {
   }
 }
 
-@media (min-width: 1050px) {
+@media (min-width: 768px) {
   body .image-section .buttons {
     padding: 1em 0;
+    width: 60%;
   }
 }
 
