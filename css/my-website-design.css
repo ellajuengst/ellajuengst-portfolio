@@ -384,6 +384,14 @@ body .ill {
           justify-content: center;
 }
 
+body .ill img {
+  width: 60%;
+}
+
+body .tall img {
+  width: 30%;
+}
+
 body .iceberg img {
   width: 80%;
 }
