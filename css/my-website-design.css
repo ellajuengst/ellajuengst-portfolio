@@ -294,12 +294,12 @@ body .image-section .item {
 }
 
 body .image-section .fonts {
-  width: 80%;
+  width: 70%;
 }
 
 @media (min-width: 768px) {
   body .image-section .fonts {
-    width: 65%;
+    width: 60%;
   }
 }
 
@@ -307,6 +307,10 @@ body .image-section .fonts {
   body .image-section .fonts {
     width: 50%;
   }
+}
+
+body .image-section .fonts img {
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -424,6 +428,16 @@ body .layouts a {
 
 body .layouts a:hover {
   color: #BC7F4C;
+}
+
+body .logo img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  body .logo img {
+    width: 40%;
+  }
 }
 
 body .image-logo img {

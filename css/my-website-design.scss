@@ -274,15 +274,19 @@ body {
        }
 
        .fonts {
-           width: 80%;
+           width: 70%;
 
         @include tablet {
-            width: 65%;
+            width: 60%;
         }
 
            @include desktop{
                 width: 50%;
            }
+       }
+
+       .fonts img {
+           width: 100%;
        }
 
        .colors {
@@ -384,6 +388,14 @@ body {
         }
  
 
+    }
+
+    .logo img {
+        width: 100%;
+
+        @include tablet {
+            width: 40%;
+        }
     }
 
     .image-logo img {
