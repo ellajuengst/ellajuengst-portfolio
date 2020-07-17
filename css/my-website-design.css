@@ -426,6 +426,16 @@ body .layouts a:hover {
   color: #BC7F4C;
 }
 
+body .image-logo img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  body .image-logo img {
+    width: 40%;
+  }
+}
+
 .show-menu {
   display: block;
   -webkit-animation: menu-appear .3s ease-in forwards;

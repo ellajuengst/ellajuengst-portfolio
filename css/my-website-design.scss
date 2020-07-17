@@ -386,6 +386,14 @@ body {
 
     }
 
+    .image-logo img {
+        width: 100%;
+
+        @include tablet {
+            width: 40%;
+        }
+    }
+
     
 
 

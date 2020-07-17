@@ -490,6 +490,8 @@ body .link {
   font-style: normal;
   font-size: 2em;
   color: #EDBE96;
+  margin-top: .5em;
+  display: block;
 }
 
 .show-menu {
