@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://use.typekit.net/sxg7krs.css">
     <link rel="icon" href="images/iceberg-logo.svg">
     <title>ella juengst | about</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="main.js"></script>
+    
 </head>
 
 <body id="bod">
@@ -72,15 +75,15 @@
         </section>
         <section class="contact">
             <h1>contact</h1>
-            <form id="contact-form" method="post" action="contact-form-handler.php">
+            <form id="contact-form" action="https://formspree.io/ellaj@live.unc.edu" method="post">
                 
-                <input name="name" class="item form-control" type="text" required placeholder="full name">
+                <input name="name" class="name item form-control" type="text" required placeholder="full name">
                
-                <input name="email" class="item form-control" type="text" required placeholder="email">
+                <input name="email" class="email item form-control" type="email" required placeholder="email">
                 
                     
-                <textarea name="message" placeholder="message" rows="8" class="item form-control"></textarea>
-
+                <textarea name="message" placeholder="message" rows="8" class="message item form-control"></textarea>
+                <div class="status"></div>
                 <br>
                 <input class="btn form-control submit" type="submit" value="submit">
                
@@ -109,6 +112,7 @@
             overlay.classList.remove('show-menu');
             bod.classList.remove('no-scroll');
         }); 
+
 
 
 
