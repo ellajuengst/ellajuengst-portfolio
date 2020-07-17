@@ -385,11 +385,11 @@ body .ill {
 }
 
 body .ill img {
-  width: 60%;
+  width: 20vw;
 }
 
 body .tall img {
-  width: 30%;
+  width: 10vw;
 }
 
 body .iceberg img {
