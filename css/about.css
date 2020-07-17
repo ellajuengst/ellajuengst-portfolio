@@ -495,6 +495,16 @@ body .link {
   display: block;
 }
 
+body textarea,
+body input.text,
+body input[type="text"],
+body input[type="button"],
+body input[type="submit"],
+body .input-checkbox {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
 .show-menu {
   display: block;
   -webkit-animation: menu-appear .3s ease-in forwards;
