@@ -480,6 +480,18 @@ body .status-text {
   color: #0C2553;
 }
 
+body .links-header {
+  font-size: 2em;
+}
+
+body .link {
+  font-family: objektiv-mk2, sans-serif;
+  font-weight: 10;
+  font-style: normal;
+  font-size: 2em;
+  color: #EDBE96;
+}
+
 .show-menu {
   display: block;
   -webkit-animation: menu-appear .3s ease-in forwards;
