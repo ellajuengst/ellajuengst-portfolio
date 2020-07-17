@@ -177,6 +177,10 @@ body {
             width: calc(100% - 4em);
             margin: 0 2em;
         }
+        @include desktop {
+            width: calc(100% - 12em);
+            margin: 0 6em;
+        }
     }
 
     .title {
@@ -199,7 +203,7 @@ body {
             }
     
             @include desktop {
-                font-size: 5em;
+                font-size: 4.5em;
                 letter-spacing: 4px;
     
             }
@@ -350,7 +354,19 @@ body {
 
     .layouts {
         margin: 0 0 2em 0;
+
+        a {
+            color: color(orange);
+        }
+
+        a:hover {
+            color: color(brown);
+        }
+ 
+
     }
+
+
 
 
 }

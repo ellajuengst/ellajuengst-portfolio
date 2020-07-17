@@ -168,6 +168,13 @@ body nav ul span {
   }
 }
 
+@media (min-width: 1050px) {
+  body section {
+    width: calc(100% - 12em);
+    margin: 0 6em;
+  }
+}
+
 body .title {
   -ms-grid-row: 2;
   grid-row: 2;
@@ -201,7 +208,7 @@ body .title h1 {
 
 @media (min-width: 1050px) {
   body .title h1 {
-    font-size: 5em;
+    font-size: 4.5em;
     letter-spacing: 4px;
   }
 }
@@ -388,6 +395,14 @@ body .logo-grid {
 
 body .layouts {
   margin: 0 0 2em 0;
+}
+
+body .layouts a {
+  color: #EDBE96;
+}
+
+body .layouts a:hover {
+  color: #BC7F4C;
 }
 
 .show-menu {
