@@ -1,3 +1,4 @@
+@import url("css/main.css");
 body, html {
   height: 100%;
   padding: 0em;
@@ -108,6 +109,7 @@ body nav ul {
   body nav ul {
     display: -ms-grid;
     display: grid;
+    -ms-grid-columns: (25%)[4];
         grid-template-columns: repeat(4, 25%);
     width: 90%;
   }
