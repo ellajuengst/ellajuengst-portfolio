@@ -3,6 +3,9 @@ body, html {
   height: 100%;
   padding: 0em;
   margin: 0em;
+  font-family: objektiv-mk2, sans-serif;
+  font-weight: 10;
+  font-style: normal;
 }
 
 body #bg {
