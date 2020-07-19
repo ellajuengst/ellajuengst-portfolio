@@ -322,17 +322,17 @@ body .image-section .fonts img {
 @media (min-width: 768px) {
   body .image-section .buttons {
     padding: 1em 0;
-    width: 60%;
+    width: 50%;
   }
 }
 
 body .image-section .buttons img {
-  width: 80%;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   body .image-section .buttons img {
-    width: 60%;
+    width: 100%;
   }
 }
 
