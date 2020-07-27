@@ -480,19 +480,30 @@ body .status-text {
   color: #0C2553;
 }
 
-body .links-header {
-  font-size: 2em;
-  margin-top: 1em;
-}
-
 body .link {
   font-family: objektiv-mk2, sans-serif;
   font-weight: 10;
   font-style: normal;
   font-size: 2em;
   color: #EDBE96;
-  margin-top: .3em;
-  display: block;
+  margin: 0;
+  padding: 1em;
+}
+
+body .link-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body textarea,

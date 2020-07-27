@@ -401,10 +401,7 @@ body {
         color: color(blue1);
     }
 
-    .links-header {
-        font-size: 2em;
-        margin-top: 1em;
-    }
+
 
     .link {
         font-family: objektiv-mk2, sans-serif;
@@ -412,8 +409,16 @@ body {
         font-style: normal;
         font-size: 2em;
         color: color(orange);
-        margin-top: .3em;
-        display: block;
+        margin: 0;
+        padding: 1em;
+    
+    }
+
+    .link-holder {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 
 
