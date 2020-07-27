@@ -490,6 +490,10 @@ body .link {
   padding: 1em;
 }
 
+body .link:hover {
+  color: #BC7F4C;
+}
+
 body .link-holder {
   display: -webkit-box;
   display: -ms-flexbox;
