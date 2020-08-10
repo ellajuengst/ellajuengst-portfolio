@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/ktp.css">
+    <link rel="stylesheet" href="https://use.typekit.net/sxg7krs.css"> 
+    <link rel="stylesheet" href="https://use.typekit.net/sxg7krs.css">
+    <link rel="icon" href="/images/iceberg-logo.svg">
+    <title>ella juengst | kappa theta pi</title>
+</head>
+
+<body id="bod">
+    <nav id="overlay">
+        <img src="/images/x.svg" class="close-btn" id="close-menu">
+        <ul>
+            
+            <li>
+                <a href="/artwork.html" class="menu-item">artwork</a>
+                <span>traditional and digital works</span>
+            </li>
+            <li>
+                <a href="/animation.html" class="menu-item">animation</a>
+                <span>original 2d animated shorts</span>
+                
+            </li>
+            <li>
+                <a href="/design.html" class="menu-item">design</a>
+                <span>web design, character design, and branding</span>
+            </li>
+            <!-- <li>
+                <a href="#">about</a>
+                <span>learn more about me</span>
+            </li> -->
+            <li>
+                <a href="/about.html" class="menu-item">about</a>
+                <span>have a commission or request? want to learn more about me? click here!</span>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="bg">
+        
+        <header>
+            <a href="/index.html"><img src="/images/Logo.jpg" class="logo"></a>
+            <img src="/images/Menu.svg" class="menu-btn" id="open-menu">
+        </header>
+        <div class="container">
+
+        
+            <div class="block title">
+                <h1>branding kappa theta pi</h1>
+            </div>
+            <div class="block">
+                <h1 class="sub">motivation and criteria</h1>
+                <h2>I recently joined the executive board of Kappa Theta Pi, UNC Chapel Hill's professional technology fraternity. I am serving as a Co-Director of Marketing. 
+                    I am in charge of desinging the fraternity's branding, logos, website, and merchandise. The fraternity represents a mix of professional and social opportunities
+                    for students at UNC. I wanted the branding to reflect a clean, modern, and sophisticated style while retaining some fun, playful elements.  
+                </h2>
+            </div>
+            <div class="block">
+                <h1 class="sub">design palette</h1>
+                <h2>The following is the current design palette for Kappa Theta Pi. Enjoy!</h2>
+                <div class="image-section design-palette">
+                    <div class="item fonts">
+                        <img src="/images/Kappa Theta Pi Design Palette-01.png">
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+
+    </div>
+
+    <script>
+        var overlay = document.getElementById('overlay');
+        var closeMenu = document.getElementById('close-menu');
+        var openMenu = document.getElementById('open-menu');
+        var bod = document.getElementById('bod');
+        
+
+        openMenu.addEventListener('click', function() {
+            overlay.classList.add('show-menu');
+            bod.classList.add('no-scroll');
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }); 
+
+        closeMenu.addEventListener('click', function() {
+            overlay.classList.remove('show-menu');
+            bod.classList.remove('no-scroll');
+        });  
+
+
+    </script>
+
+</body>
+
+
+
+</html>
