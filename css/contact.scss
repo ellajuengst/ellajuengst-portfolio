@@ -1,0 +1,404 @@
+
+
+$colors : (
+    blue1: #0C2553,
+    blue2: #88A7E2,
+    blue3: #BFD2EF,
+    white: #ffffff,
+    brown: #BC7F4C,
+    orange: #EDBE96
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name);
+}
+
+$tablet: 768px;
+$desktop: 1050px;
+
+@mixin tablet {
+    @media (min-width: #{$tablet}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+body, html {
+    height: 100%;
+    padding: 0em;
+    margin: 0em;
+}
+
+
+
+body {
+    
+
+    #bg {
+        background-color: white;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-rows: 12vh auto auto auto;
+
+        @include tablet {
+            grid-template-rows: [row1-start] 15vh [row1-end row2-start] auto [row2-end row3-start] auto [row3-end];
+            grid-template-columns: [col1-start] 1fr [col1-end col2-start] 1fr [col2-end];
+        }
+
+        @include desktop {
+            grid-template-rows: [row1-start] 18vh [row1-end row2-start] auto [row2-end];
+            grid-template-columns: [col1-start] 3fr [col1-end col2-start] 1fr [col2-end col3-start] 1fr [col3-end];
+        }
+    }
+
+    nav {
+        display: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+
+    header {
+        grid-row: 1;
+        padding: 2em;
+
+        @include tablet {
+            grid-row: row1-start / row1-end;
+            grid-column: col1-start / col2-end;
+        }
+
+        @include desktop {
+            grid-row: row1-start / row1-end;
+            grid-column: col1-start / col3-end;
+        
+        }
+
+        .logo {
+            width: 45px;
+            
+            @include tablet {
+                width: 65px;
+            }
+        }
+    
+      
+        .menu-btn {
+            width: 45px;
+            float: right;
+            cursor: pointer;
+            color: color(blue1);
+
+            @include tablet {
+                width: 65px;
+            }
+        }
+
+        .menu-btn:hover {
+            color: color(blue2);
+        }
+
+    }
+
+   
+
+    
+        h1 {
+            font-family: objektiv-mk2, sans-serif;
+            font-weight: 10;
+            font-style: normal;
+            font-size: 3em;
+            letter-spacing: 2px;
+            margin: 0em;
+            color: color(blue1);
+            @include tablet {
+                font-size: 3.5em;
+                letter-spacing: 3px;
+            }
+
+            @include desktop {
+                font-size: 5em;
+                letter-spacing: 4px;
+
+            }
+        }
+    
+        p {
+            font-family: goudy-bookletter-1911,serif;
+            font-weight: 400;
+            font-style: normal;
+            text-align: center;
+            font-size: 1.2em;
+            color: color(blue1);
+            @include tablet {
+                font-size: 1.5em;
+                text-align: left;
+            }
+
+            @include desktop {
+                letter-spacing: .5px;
+                font-size: 1em;
+                margin: 0;
+                text-align: center;
+            }
+        }
+
+        h2 {
+            font-family: objektiv-mk2, sans-serif;
+        font-weight: 10;
+        font-style: normal;
+        font-size: 1.8em;
+        letter-spacing: 1px;
+        margin: 0em;
+        color: color(blue1);
+        text-align: center;
+        @include tablet {
+            font-size: 2.3em;
+            letter-spacing: 2px;
+            text-align: left;
+        }
+
+        @include desktop {
+            font-size: 2.3em;
+            letter-spacing: 3px;
+            text-align: center;
+
+
+        }
+        }
+
+   
+
+    
+
+    .pol {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 2em;
+        .polar {
+            width: 25%;
+        }
+
+        @include tablet {
+            grid-column: col2-start / col2-end;
+            .polar {
+                width: 40%;
+            }
+        }
+
+        @include desktop {
+            grid-row: row2-start / row2-end;
+            grid-column: col3-start / col3-end;
+            justify-content: center;
+            
+            .polar {
+                width: 60%;
+            }
+        }
+    }
+
+    .contact {
+        padding: 0 2em;
+        text-align: center;
+        @include tablet {
+            grid-column: col1-start / col2-end;
+            text-align: left;
+        }
+    
+        @include desktop {
+            display: flex;
+            align-items: center;
+           
+            flex-direction: column;
+            grid-row: row2-start / row2-end;
+            grid-column: col1-start / col1-end;
+            display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    
+    
+        }
+    
+        form {
+            padding: 1em 0;
+    
+            @include desktop {
+                display: flex;
+                flex-direction: column;
+                align-content: center;
+                justify-content: center;
+                width: 90%;
+          
+                
+            }
+        }
+    
+        input {
+            border-top: 1px solid color(orange);
+            border-left: 1px solid color(orange);
+            border-right: 1px solid color(orange);
+            border-bottom: none;
+            color: color(blue1);
+            font-family: objektiv-mk2, sans-serif;
+            font-weight: 10;
+            font-style: normal;
+           
+    
+        }
+    
+        ::placeholder {
+            font-family: objektiv-mk2, sans-serif;
+            font-weight: 10;
+            font-style: normal;
+            color: color(orange);
+            text-align: left;
+    
+          }
+    
+        .item {
+            width: 80%;
+            padding: 1em;
+            @include desktop {
+                width: 100%;
+                
+            }
+        }
+        
+        .item:focus {
+            outline: none;
+        }
+        textarea {
+            border: 1px solid color(orange);
+            font-family: objektiv-mk2, sans-serif;
+            font-weight: 10;
+            font-style: normal;
+            color: color(blue1);
+    
+            resize: none;
+        }
+    
+    
+    
+        .btn {
+            background-color: #EDBE96; 
+            border: none;
+            color: white;
+            max-height: 15vh;
+            margin: 1em 0;
+            padding: 1em 2em;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 1em;
+            font-family: objektiv-mk2, sans-serif;
+            font-weight: 10;
+            font-style: normal;
+            border-radius: 8px;
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            cursor: pointer;
+            border: none;
+            outline:none;
+    
+            @include desktop {
+                align-self: center;
+            }
+    
+        }
+    
+        .btn:hover {
+            background-color: #BC7F4C;
+        }
+    }
+
+    .status-text {
+        font-family: objektiv-mk2, sans-serif;
+        font-weight: 10;
+        font-style: normal;
+        font-size: .7em;
+        color: color(blue1);
+    }
+
+
+
+    .link {
+        font-family: objektiv-mk2, sans-serif;
+        font-weight: 10;
+        font-style: normal;
+        font-size: 2em;
+        color: color(orange);
+        margin: 0;
+        padding: 1em;
+       
+    
+    }
+
+    .first {
+        @include tablet {
+            padding: 1em 1em 1em 0em;
+        }
+        @include desktop {
+            padding: 1em;
+        }
+    }
+
+    .link:hover { 
+        color: color(brown);
+    
+    }
+
+    .link-holder {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        grid-row: 3;
+        margin-bottom: 1em;
+        @include tablet {           
+            align-items: flex-start;
+            justify-content: flex-start;
+        }
+
+    }
+
+
+         textarea,
+        input.text,
+        input[type="text"],
+        input[type="button"],
+        input[type="submit"],
+        input[type="email"],
+        .input-checkbox {
+            -webkit-appearance: none;
+            border-radius: 0;
+        }
+
+}
+
+.info {
+    text-align: left;
+    margin: 0 2em;
+
+    @include tablet {
+        grid-column: col1-start / col1-end;
+        grid-row: row3-start / row3-end;
+    }
+
+    @include desktop {
+        grid-column: col2-start / col2-end;
+        grid-row: row2-start / row2-end;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+}

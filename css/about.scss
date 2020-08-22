@@ -42,17 +42,21 @@ body {
         width: 100%;
         height: 100%;
         display: grid;
-        grid-template-rows: 8vh auto auto auto;
+        grid-template-rows: 8vh auto auto;
 
         @include tablet {
-            grid-template-rows: [row1-start] 8vh [row1-end row2-start] auto [row2-end row3-start] auto [row3-end];
-            grid-template-columns: [col1-start] 1fr [col1-end col2-start] 1fr [col2-end];
+            grid-template-rows: [row1-start] 8vh [row1-end row2-start] auto [row2-end];
+            
         }
 
         @include desktop {
             grid-template-rows: [row1-start] 12vh [row1-end row2-start] auto [row2-end];
-            grid-template-columns: [col1-start] 4fr [col1-end col2-start] 1fr [col2-end col3-start] 1fr [col3-end];
+            grid-template-columns: [col1-start] 3fr [col1-end col2-start] 2fr [col2-end];
         }
+    }
+
+    nav {
+        display: none;
     }
     
     a {
@@ -65,12 +69,11 @@ body {
 
         @include tablet {
             grid-row: row1-start / row1-end;
-            grid-column: col1-start / col2-end;
         }
 
         @include desktop {
             grid-row: row1-start / row1-end;
-            grid-column: col1-start / col3-end;
+            grid-column: col1-start / col2-end;
         
         }
 
@@ -100,87 +103,7 @@ body {
 
     }
 
-    nav {
-        position: absolute;
-        z-index: 2;
-        background: color(brown);
-        padding: 2em;
-        width:  calc(100% - 4em);
-        height: calc(100% - 4em);
-        
-        display: none;
-        transform: scaleX(0);
-        transform-origin: right;
-        .close-btn {
-            width: 45px;
-            float: right;
-            cursor: pointer;
-            opacity: 0;
-            @include tablet {
-                width: 65px;
-            }
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 15% auto 0 auto;
-            padding: 0;
-            // flex-direction: column;
-            // align-items: center;
-            // justify-content: space-around;
-            
-            @include desktop {
-                display: grid;
-                grid-template-columns: repeat(4, 25%);
-                width: 90%;
-            }
-            
-           
-            li {
-                opacity: 0;
-                margin: 1.5em;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                
-                @include desktop {
-                    display: block;
-                }
-                
-                
-            }
-
-            a {
-                color: white;
-                font-size: 2.5em;
-                font-family: objektiv-mk2, sans-serif;
-                font-weight: 10;
-                font-style: normal; 
-                @include desktop {
-                    text-align: left;
-                }
-            }
-
-            a:hover {
-                color: color(blue1);
-            }
-
-            span {
-                color: color(orange);
-                text-align: center;
-                display: block;
-                max-width: 200px;
-                font-size: .9em;
-                margin-top: 20px;
-                font-family: goudy-bookletter-1911,serif;
-                font-weight: 400;
-                font-style: normal;
-                @include desktop {
-                    text-align: left;
-                }
-            }
-        }
-    }
+    
 
     
         h1 {
@@ -235,160 +158,42 @@ body {
 
         @include tablet {
             grid-row: row2-start / row2-end;
-            grid-column: col1-start / col2-end;
+            padding: 4em 3em; 
         }
 
         @include desktop {
             grid-row: row2-start / row2-end;
             grid-column: col1-start / col1-end;
-            padding: 3em;
+            padding: 3em 4em;
             display: flex;
             align-items: center;
             flex-direction: column;
         }
     }
-
-    .contact {
-        grid-row: 3;
-        padding: 0 2em 2em 2em;
-
-        @include tablet {
-            grid-row: row3-start / row3-end;
-            grid-column: col1-start / col1-end;
-        }
-
-        @include desktop {
-            display: flex;
-            align-items: center;
-       
-            flex-direction: column;
-            grid-row: row2-start / row2-end;
-            grid-column: col2-start / col2-end;
-            padding: 3em;
-
-            .form {
-                // height: 20vh;
-            }
-        }
-
-        form {
-            padding: 1em 0;
-
-            @include desktop {
-                display: flex;
-                flex-direction: column;
-                align-content: center;
-                justify-content: center;
-                width: 100%;
-                
-            }
-        }
-
-        input {
-            border-top: 1px solid color(orange);
-            border-left: 1px solid color(orange);
-            border-right: 1px solid color(orange);
-            border-bottom: none;
-            color: color(blue1);
-            font-family: objektiv-mk2, sans-serif;
-            font-weight: 10;
-            font-style: normal;
-           
-
-        }
-
-        ::placeholder {
-            font-family: objektiv-mk2, sans-serif;
-            font-weight: 10;
-            font-style: normal;
-            color: color(orange);
-            text-align: left;
-
-          }
-
-        .item {
-            width: 80%;
-            padding: 1em;
-            @include desktop {
-                width: 100%;
-                
-            }
-        }
-        
-        .item:focus {
-            outline: none;
-        }
-        textarea {
-            border: 1px solid color(orange);
-            font-family: objektiv-mk2, sans-serif;
-            font-weight: 10;
-            font-style: normal;
-            color: color(blue1);
-
-            resize: none;
-        }
 
     
 
-        .btn {
-            background-color: #EDBE96; 
-            border: none;
-            color: white;
-            max-height: 15vh;
-            margin: 1em 0;
-            padding: 1em 2em;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 1em;
-            font-family: objektiv-mk2, sans-serif;
-            font-weight: 10;
-            font-style: normal;
-            border-radius: 8px;
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-            cursor: pointer;
-            border: none;
-            outline:none;
-
-            @include desktop {
-                align-self: center;
-            }
-
-        }
-
-        .btn:hover {
-            background-color: #BC7F4C;
-        }
-    }
-
-    .pol {
-        grid-row: 4;
-        width: 100%;
+    .photo-div {
+      
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-bottom: 2em;
-        .polar {
-            width: 25%;
+        .photo {
+            width: 80%;
         }
 
         @include tablet {
             grid-row:  row3-start / row3-end;;
-            grid-column: col2-start / col2-end;
-            align-items: flex-end;
-            .polar {
-                width: 40%;
-            }
+            
         }
 
         @include desktop {
             grid-row: row2-start / row2-end;
-            grid-column: col3-start / col3-end;
-            align-items: flex-end;
+            grid-column: col2-start / col2-end;
             justify-content: center;
             
-            .polar {
-                width: 70%;
+            .photo {
+                width: 90%;
             }
         }
     }
@@ -438,45 +243,4 @@ body {
             border-radius: 0;
         }
 
-}
-
-.show-menu {
-    display: block;
-    animation: menu-appear .3s ease-in forwards;
-
-    .close-btn {
-        animation: button .3s .3s forwards;
-    }
-
-    li {
-        animation: list-items .3s .3s forwards;
-    }
-}
-
-.no-scroll {
-    overflow: hidden;
-}
-
-@keyframes menu-appear {
-    from {
-        transform: scaleX(0);
-    } to {
-        transform: scaleX(1);
-    }
-}
-
-@keyframes button {
-    from {
-        opacity: 0;
-    } to {
-        opacity: 1;
-    }
-}
-
-@keyframes list-items {
-    from {
-        opacity: 0;
-    } to {
-        opacity: 1;
-    }
 }

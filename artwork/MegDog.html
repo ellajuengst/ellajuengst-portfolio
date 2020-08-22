@@ -7,33 +7,14 @@
     <link rel="stylesheet" href="https://use.typekit.net/sxg7krs.css"> 
     <link rel="stylesheet" href="https://use.typekit.net/sxg7krs.css">
     <link rel="icon" href="/images/iceberg-logo.svg">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
     <title>ella juengst | meg's dog</title>
 </head>
 
 <body id="bod">
-    <nav id="overlay">
-        <img src="/images/x.svg" class="close-btn" id="close-menu">
-        <ul>
-            
-            <li>
-                <a href="/artwork.html" class="menu-item">artwork</a>
-                <span>traditional and digital works</span>
-            </li>
-            <li>
-                <a href="/animation.html" class="menu-item">animation</a>
-                <span>original 2d animated shorts</span>
-                
-            </li>
-            <li>
-                <a href="/design.html" class="menu-item">design</a>
-                <span>web design, character design, and branding</span>
-            </li>
-            <li>
-                <a href="/about.html" class="menu-item">about</a>
-                <span>have a commission or request? want to learn more about me? click here!</span>
-            </li>
-        </ul>
-    </nav>
+    <div id="nav-placeholder"></div>
+
     <div id="bg">
 
         <header>
@@ -56,25 +37,9 @@
 
 
     <script>
-         var overlay = document.getElementById('overlay');
-        var closeMenu = document.getElementById('close-menu');
-        var openMenu = document.getElementById('open-menu');
-        var bod = document.getElementById('bod');
-        
-
-        openMenu.addEventListener('click', function() {
-            overlay.classList.add('show-menu');
-            bod.classList.add('no-scroll');
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }); 
-
-        closeMenu.addEventListener('click', function() {
-            overlay.classList.remove('show-menu');
-            bod.classList.remove('no-scroll');
-        }); 
-
-
+        $(function(){
+            $("#nav-placeholder").load("/nav.html");
+        });
     </script>
 
 </body>

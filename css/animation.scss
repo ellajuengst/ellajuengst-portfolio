@@ -59,6 +59,9 @@ body {
 
         }
     }
+    nav {
+        display: none;
+    }
     
     a {
         text-decoration: none;
@@ -98,87 +101,6 @@ body {
             color: color(blue2);
         }
 
-    }
-
-    nav {
-        position: absolute;
-        z-index: 2;
-        background: color(brown);
-        padding: 2em;
-        width:  calc(100% - 4em);
-        height: calc(100vh - 4em);
-        display: none;
-        transform: scaleX(0);
-        transform-origin: right;
-        .close-btn {
-            width: 45px;
-            float: right;
-            cursor: pointer;
-            opacity: 0;
-            @include tablet {
-                width: 65px;
-            }
-        }
-
-        ul {
-            list-style-type: none;
-            margin: 15% auto 0 auto;
-            padding: 0;
-            // flex-direction: column;
-            // align-items: center;
-            // justify-content: space-around;
-            
-            @include desktop {
-                display: grid;
-                grid-template-columns: repeat(4, 25%);
-                width: 90%;
-            }
-            
-           
-            li {
-                opacity: 0;
-                margin: 1.5em;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-   
-                @include desktop {
-                    display: block;
-                }
-                
-                
-            }
-
-            a {
-                color: white;
-                font-size: 2.5em;
-                font-family: objektiv-mk2, sans-serif;
-                font-weight: 10;
-                font-style: normal; 
-                @include desktop {
-                    text-align: left;
-                }
-            }
-
-            a:hover {
-                color: color(blue1);
-            }
-
-            span {
-                color: color(orange);
-                text-align: center;
-                display: block;
-                max-width: 200px;
-                font-size: .9em;
-                margin-top: 20px;
-                font-family: goudy-bookletter-1911,serif;
-                font-weight: 400;
-                font-style: normal;
-                @include desktop {
-                    text-align: left;
-                }
-            }
-        }
     }
 
     
@@ -357,44 +279,4 @@ body {
     }
 
 }
-   
-.show-menu {
-    display: block;
-    animation: menu-appear .3s ease-in forwards;
-
-    .close-btn {
-        animation: button .3s .3s forwards;
-    }
-
-    li {
-        animation: list-items .3s .3s forwards;
-    }
-}
-
-.no-scroll {
-    overflow: hidden;
-}
-
-@keyframes menu-appear {
-    from {
-        transform: scaleX(0);
-    } to {
-        transform: scaleX(1);
-    }
-}
-
-@keyframes button {
-    from {
-        opacity: 0;
-    } to {
-        opacity: 1;
-    }
-}
-
-@keyframes list-items {
-    from {
-        opacity: 0;
-    } to {
-        opacity: 1;
-    }
-}
+  

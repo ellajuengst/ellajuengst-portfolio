@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+    <link rel="stylesheet" href="https://use.typekit.net/sxg7krs.css"> 
+    <link rel="stylesheet" href="https://use.typekit.net/sxg7krs.css">
+    <link rel="icon" href="images/iceberg-logo.svg">
+    <title>ella juengst | contact</title>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="main.js"></script>
+    
+</head>
+
+<body id="bod">
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("nav.html");
+        });
+
+    </script>
+
+    <div id="bg">
+        
+
+        <header>
+            <a href="index.html"><img src="images/Logo.jpg" class="logo"></a>
+            <img src="images/Menu.svg" class="menu-btn" id="open-menu">
+        </header>
+
+        
+        <section class="contact">
+            <h1>contact</h1>
+            <form id="contact-form" action="https://formspree.io/ellaj@live.unc.edu" method="POST">
+                
+                <input name="name" class="name item form-control" type="text" required placeholder="full name">
+               
+                <input name="_replyto" class="email item form-control" type="email" required placeholder="email">
+                
+                    
+                <textarea name="message" placeholder="message" rows="8" class="message item form-control"></textarea>
+                <div class="status"></div>
+                <br>
+                <input class="btn form-control submit" type="submit" value="submit">
+               
+            </form>
+            
+               
+        </section>
+
+        <section class="info">
+            <div class="info-line"><h2>location</h2> <p>chapel hill, nc</p></div>
+            <div class="info-line"><h2>email</h2> <p>ellajuengst@gmail.com</p></div>
+            <div class="link-holder">
+                <a class="link first" href="https://www.instagram.com/ella.j.art/?igshid=1ayphhqq4sez9" target="_blank" ><i class="fab fa-instagram social"></i></a>
+                <a class="link" href="https://www.linkedin.com/in/ella-juengst-ab7844183" target="_blank" ><i class="fab fa-linkedin-in"></i></a>
+                <a class="link" href="https://www.behance.net/ellajuengst" target="_blank" ><i class="fab fa-behance"></i></a>
+                
+            </div>
+        </section>
+        
+       
+
+        <section class="pol">
+            <img src="images/standing polar bear 2.svg" class="polar">
+        </section>
+
+    </div>
+
+    
+</body>
+
+
+
+</html>

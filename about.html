@@ -10,39 +10,21 @@
     <link rel="icon" href="images/iceberg-logo.svg">
     <title>ella juengst | about</title>
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
     <script src="main.js"></script>
     
 </head>
 
 <body id="bod">
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function(){
+             $("#nav-placeholder").load("nav.html");
+         });
+     </script>
     <div id="bg">
-        <nav id="overlay">
-            <img src="images/x.svg" class="close-btn" id="close-menu">
-            <ul>
-                
-                <li>
-                    <a href="artwork.html" class="menu-item">artwork</a>
-                    <span>traditional and digital works</span>
-                </li>
-                <li>
-                    <a href="animation.html" class="menu-item">animation</a>
-                    <span>original 2d animated shorts</span>
-                    
-                </li>
-                <li>
-                    <a href="design.html" class="menu-item">design</a>
-                    <span>web design, character design, and branding</span>
-                </li>
-                <!-- <li>
-                    <a href="#">about</a>
-                    <span>learn more about me</span>
-                </li> -->
-                <li>
-                    <a href="about.html" class="menu-item">about</a>
-                    <span>have a commission or request? want to learn more about me? click here!</span>
-                </li>
-            </ul>
-        </nav>
+        
 
         <header>
             <a href="index.html"><img src="images/Logo.jpg" class="logo"></a>
@@ -73,60 +55,17 @@
                 interest and knowledge regarding the intersection of these two fields by studying and practicing web 
                 development and UX/UI design.
             </h2>
-            <div class="link-holder">
-                <a class="link" href="https://www.instagram.com/ella.j.art/?igshid=1ayphhqq4sez9" target="_blank" ><i class="fab fa-instagram social"></i></a>
-                <a class="link" href="https://www.linkedin.com/in/ella-juengst-ab7844183" target="_blank" ><i class="fab fa-linkedin-in"></i></a>
-                <a class="link" href="https://www.behance.net/ellajuengst" target="_blank" ><i class="fab fa-behance"></i></a>
-                 
-            </div>
-               
+            
         </section>
-        <section class="contact">
-            <h1>contact</h1>
-            <form id="contact-form" action="https://formspree.io/ellaj@live.unc.edu" method="POST">
-                
-                <input name="name" class="name item form-control" type="text" required placeholder="full name">
-               
-                <input name="_replyto" class="email item form-control" type="email" required placeholder="email">
-                
-                    
-                <textarea name="message" placeholder="message" rows="8" class="message item form-control"></textarea>
-                <div class="status"></div>
-                <br>
-                <input class="btn form-control submit" type="submit" value="submit">
-               
-            </form>
-        </section>
+       
 
-        <section class="pol">
-            <img src="images/standing polar bear 2.svg" class="polar">
+        <section class="photo-div">
+            <img src="images/Ella Juengst-136.svg" class="photo">
         </section>
 
     </div>
 
-    <script>
-        var overlay = document.getElementById('overlay');
-        var closeMenu = document.getElementById('close-menu');
-        var openMenu = document.getElementById('open-menu');
-        var bod = document.getElementById('bod');
-        
-
-        openMenu.addEventListener('click', function() {
-            overlay.classList.add('show-menu');
-            bod.classList.add('no-scroll');
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }); 
-
-        closeMenu.addEventListener('click', function() {
-            overlay.classList.remove('show-menu');
-            bod.classList.remove('no-scroll');
-        }); 
-
-
-
-
-    </script>
+   
 
 </body>
 
