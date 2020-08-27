@@ -77,8 +77,7 @@ body header .menu-btn:hover {
 
 @media (min-width: 1050px) {
   body .block {
-    width: calc(100% - 12em);
-    margin: 0 6em;
+    width: 75%;
   }
 }
 
@@ -115,7 +114,7 @@ body .title h1 {
 
 @media (min-width: 1050px) {
   body .title h1 {
-    font-size: 4.5em;
+    font-size: 4em;
     letter-spacing: 4px;
   }
 }
@@ -140,7 +139,7 @@ body h1 {
 
 @media (min-width: 1050px) {
   body h1 {
-    font-size: 3em;
+    font-size: 2.5em;
     letter-spacing: 3px;
   }
 }
@@ -355,6 +354,24 @@ body .image-logo img {
 @media (min-width: 768px) {
   body .image-logo img {
     width: 40%;
+  }
+}
+
+@media (min-width: 1050px) {
+  body .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 

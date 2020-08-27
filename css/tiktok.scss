@@ -104,8 +104,7 @@ body {
             margin: 0 2em;
         }
         @include desktop {
-            width: calc(100% - 12em);
-            margin: 0 6em;
+            width: 75%;
         }
     }
 
@@ -129,7 +128,7 @@ body {
             }
     
             @include desktop {
-                font-size: 4.5em;
+                font-size: 4em;
                 letter-spacing: 4px;
     
             }
@@ -153,7 +152,7 @@ body {
         }
 
         @include desktop {
-            font-size: 3em;
+            font-size: 2.5em;
             letter-spacing: 3px;
             
 
@@ -177,18 +176,7 @@ body {
         }
     }
 
-    .image {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 3em 0;
-
-        img {
-            width: 80%;
-            margin: 0;
-        }
-    }
+   
 
     .contact {
         padding: 2em 0;
@@ -225,8 +213,10 @@ body {
     }
 
     .img-holder {
-        width: 20%;
+        width: 30%;
         display: flex;
+        margin-top: 3em;
+        margin-bottom: 3em;
         
 
         img {
@@ -242,7 +232,15 @@ body {
     a:hover {
         color: color(brown);
     }
-    
+
+    .container {
+        @include desktop {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+    }
 }
 
  

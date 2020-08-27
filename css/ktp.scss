@@ -103,8 +103,7 @@ body {
             margin: 0 2em;
         }
         @include desktop {
-            width: calc(100% - 12em);
-            margin: 0 6em;
+            width: 75%;
         }
     }
 
@@ -114,7 +113,7 @@ body {
         display: flex;
         // flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: left;
         z-index: 1;
         color: color(blue1);
         margin-top: 2em;
@@ -125,11 +124,13 @@ body {
             @include tablet {
                 font-size: 3.5em;
                 letter-spacing: 3px;
+                text-align: left;
             }
     
             @include desktop {
-                font-size: 4.5em;
+                font-size: 4em;
                 letter-spacing: 4px;
+                text-align: left;
     
             }
         }
@@ -144,12 +145,11 @@ body {
         font-style: normal;
         font-size: 1.8em;
         letter-spacing: 1px;
-        margin: .5em;
+        margin: .5em 0;
         color: color(blue1);
         @include tablet {
             font-size: 2.3em;
             letter-spacing: 2px;
-            text-align: center;
         }
 
         @include desktop {
@@ -169,7 +169,6 @@ body {
         color: color(blue1);
         @include tablet {
             font-size: 1.5em;
-            text-align: center;
         }
 
         @include desktop {
@@ -189,10 +188,11 @@ body {
         @include tablet {
             font-size: 2.3em;
             letter-spacing: 2px;
+            text-align: left;
         }
 
         @include desktop {
-            font-size: 3em;
+            font-size: 2.5em;
             letter-spacing: 3px;
             
 
@@ -201,15 +201,16 @@ body {
 
    .image-section {
        width: calc(100%-4em);
-        padding: 0 2em;
+        padding: 0em;
 
 
        display: flex;
        flex-direction: column;
+       padding-bottom: 3em;
 
        @include tablet {
-           align-items: center;
-           justify-content: center;
+           align-items: flex-start;
+           justify-content: flex-start;
        }
 
        .item {
@@ -225,7 +226,14 @@ body {
 
    }
 
-
+   .container {
+    @include desktop {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
 
 
 }
