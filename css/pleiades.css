@@ -239,4 +239,12 @@ body .contact .contact-btn:hover {
             flex-direction: column;
   }
 }
+
+body a {
+  color: #EDBE96;
+}
+
+body a:hover {
+  color: #BC7F4C;
+}
 /*# sourceMappingURL=pleiades.css.map */
