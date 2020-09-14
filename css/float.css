@@ -89,12 +89,16 @@ body .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
           justify-content: left;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   z-index: 1;
   color: #0C2553;
   margin-top: 2em;
@@ -114,7 +118,7 @@ body .title h1 {
 
 @media (min-width: 1050px) {
   body .title h1 {
-    font-size: 4em;
+    font-size: 4.5em;
     letter-spacing: 4px;
   }
 }
@@ -138,7 +142,7 @@ body h1 {
 
 @media (min-width: 1050px) {
   body h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     letter-spacing: 3px;
   }
 }
@@ -165,8 +169,51 @@ body h2 {
   }
 }
 
+body .image-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  body .image-sec {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+body .image {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 3em 0;
+}
+
+body .image img {
+  width: 40%;
+  margin: 0;
+}
+
 body .contact {
-  padding: 2em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -208,12 +255,8 @@ body .contact .contact-btn:hover {
 }
 
 body .img-holder {
-  width: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 3em;
-  margin-bottom: 3em;
+  width: 80%;
+  margin: 2em 0;
 }
 
 body .img-holder img {
@@ -245,4 +288,4 @@ body a:hover {
             flex-direction: column;
   }
 }
-/*# sourceMappingURL=tiktok.css.map */
+/*# sourceMappingURL=float.css.map */

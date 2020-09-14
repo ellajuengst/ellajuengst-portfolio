@@ -116,8 +116,9 @@ body {
         grid-column: 1;
         display: flex;
         // flex-direction: column;
-        align-items: center;
+        align-items: left;
         justify-content: left;
+        flex-direction: column;
         z-index: 1;
         color: color(blue1);
         margin-top: 2em;
@@ -178,7 +179,16 @@ body {
             letter-spacing: .5px;
         }
     }
-
+    .image-sec {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        @include tablet {
+            flex-direction: row;
+        }
+        
+    }
     .image {
         width: 100%;
         display: flex;
@@ -187,13 +197,13 @@ body {
         margin: 3em 0;
 
         img {
-            width: 80%;
+            width: 40%;
             margin: 0;
         }
     }
 
     .contact {
-        padding: 2em 0;
+        
         display: flex;
         align-items: flex-start;
         justify-content: flex-start;
@@ -229,10 +239,11 @@ body {
 
     .img-holder {
         width: 80%;
-        margin-bottom: 2em;
+        margin: 2em 0;
 
         img {
             width: 100%;
+            
         }
     }
 
