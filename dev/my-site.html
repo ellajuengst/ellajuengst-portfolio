@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/dev-page.css">
+    <link rel="stylesheet" href="https://use.typekit.net/sxg7krs.css"> 
+    <link rel="stylesheet" href="https://use.typekit.net/sxg7krs.css">
+    <link rel="icon" href="/images/iceberg-logo.svg">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <title>ella juengst | my portfolio website</title>
+</head>
+
+<body id="bod">
+    <div id="nav-placeholder"></div>
+
+    <div id="bg">
+        
+        <header>
+            <a href="/index.html"><img src="/images/Logo.jpg" class="logo"></a>
+            <img src="/images/Menu.svg" class="menu-btn" id="open-menu">
+        </header>
+        <div class="container">
+            <div class="block title">
+                <h1>developing my portfolio website</h1>
+            </div>
+            <br>
+           
+        
+           
+            <div class="block">
+                <h1 class="sub">introduction</h1>
+                <h2>Welcome to my portfolio site. Here, I will discuss how I took on this project and what tools I used
+                    when creating it. As for my motivatoin, I created this site as place to showcase my skills in both
+                    coding and design. I first designed and prototyped the site in Adobe XD, and you can check out my design process 
+                    <a href="/design/my-website-design.html">here</a>. I wanted the site to be more interesting and creative than your typical
+                    Bootstrap site, so I decided to build my site using the built-in/customizable CSS grid and created my own UI elements. 
+                    I utilized HTML5, CSS3/SASS, and JavaScript to make my site fully functional and responsive.
+                </h2>
+            </div>
+            
+            <div class="block">
+                <h1 class="sub">goals</h1>
+                <h2>The goal of my site is to provide easy access to my design and development projects for employers, friends, and anyone else interested in viewing my 
+                    work. I would achieve this through create a simple but unique navigation, a clean layout and design for each page, and a fully responsive site
+                    that can be viewed on any device (phone, computer, or tablet).
+                </h2>
+                
+            </div>
+            <div class="block">
+                <h1 class="sub">development</h1>
+                <h2>I programmed the site using "Mobile-first" principles. Using SASS (Syntactically Awesome Style Sheets), I create variables
+                    to represent each breakpoint and referenced these variables throughout the rest of my CSS code to change the layouts for both 
+                    tablet and desktop viewing. I created unique CSS grids for each page on my site.
+                    <br>
+                    <br>
+                    I used JavaScript to create a functional navigation menu, that also changes its layout on different devices. I created my navigation in its 
+                    own HTML file, in order to utilize a global navigation (making edits and changes much more efficient). This file is linked to the other files using JavaScript.
+                </h2>
+            </div>
+            <div class="block">
+                <div class="image">
+                    <img src="/images/Home Page Design Layout.jpg">
+                </div>
+                
+            </div>
+            <br>
+            
+
+        </div>
+
+    </div>
+
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("/nav.html");
+        });
+    </script>
+
+</body>
+
+
+
+</html>
