@@ -13,6 +13,7 @@ $colors : (
 
 $tablet: 768px;
 $desktop: 1050px;
+$xlarge: 1500px;
 
 @mixin tablet {
     @media (min-width: #{$tablet}) {
@@ -22,6 +23,12 @@ $desktop: 1050px;
 
 @mixin desktop {
     @media (min-width: #{$desktop}) {
+        @content;
+    }
+}
+
+@mixin xlarge {
+    @media (min-width: #{$xlarge}) {
         @content;
     }
 }
@@ -51,7 +58,11 @@ body {
 
         @include desktop {
             grid-template-rows: [row1-start] 12vh [row1-end row2-start] auto [row2-end];
-            grid-template-columns: [col1-start] 3fr [col1-end col2-start] 2fr [col2-end];
+            grid-template-columns: [col1-start] 3fr [col1-end col2-start] 1.8fr [col2-end];
+        }
+        @include xlarge {
+            grid-template-rows: [row1-start] 12vh [row1-end row2-start] auto [row2-end];
+            grid-template-columns: [col1-start] 2.5fr [col1-end col2-start] 2fr [col2-end];
         }
     }
 
@@ -120,7 +131,7 @@ body {
             }
 
             @include desktop {
-                font-size: 5em;
+                font-size: 3.5em;
                 letter-spacing: 4px;
 
             }
@@ -140,6 +151,13 @@ body {
             @include desktop {
                 letter-spacing: .5px;
                 font-size: 1em;
+                margin: 0;
+                text-align: center;
+            }
+
+            @include xlarge {
+                letter-spacing: .5px;
+                font-size: 1.2em;
                 margin: 0;
                 text-align: center;
             }
@@ -167,8 +185,12 @@ body {
             padding: 3em 4em;
             display: flex;
             align-items: center;
+            // justify-content: center;
             flex-direction: column;
+            width:90%;
         }
+
+       
     }
 
     
@@ -191,10 +213,17 @@ body {
             grid-row: row2-start / row2-end;
             grid-column: col2-start / col2-end;
             justify-content: center;
+            align-items: center;
             
             .photo {
                 width: 90%;
+                max-width: 600px;
             }
+        }
+
+        @include xlarge {
+            align-items: flex-start;
+
         }
     }
 
@@ -242,5 +271,44 @@ body {
             -webkit-appearance: none;
             border-radius: 0;
         }
+
+}
+.contact {
+    grid-row: 4;
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    @include desktop {
+        grid-row: main2-start / main2-end;
+        grid-column: col2-start / col2-end;
+        align-items: flex-start;
+    justify-content: flex-start;
+    }
+    .contact-btn {
+        background-color: #EDBE96; 
+        border: none;
+        color: white;
+        max-height: 15vh;
+        padding: 1em 2em;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 1em;
+        font-family: objektiv-mk2, sans-serif;
+        font-weight: 10;
+        font-style: normal;
+        border-radius: 8px;
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        cursor: pointer;
+        border: none;
+        outline:none;
+
+    }
+
+    .contact-btn:hover {
+        background-color: #BC7F4C;
+    }
 
 }
