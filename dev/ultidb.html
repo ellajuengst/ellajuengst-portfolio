@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/dev-page.css">
+    <link rel="stylesheet" href="https://use.typekit.net/sxg7krs.css"> 
+    <link rel="stylesheet" href="https://use.typekit.net/sxg7krs.css">
+    <link rel="icon" href="/images/iceberg-logo.svg">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <title>ella juengst | ultiDB</title>
+</head>
+
+<body id="bod">
+    <div id="nav-placeholder"></div>
+
+    <div id="bg">
+        
+        <header>
+            <a href="/index.html"><img src="/images/Logo.jpg" class="logo"></a>
+            <img src="/images/Menu.svg" class="menu-btn" id="open-menu">
+        </header>
+        <div class="container">
+            <div class="block title">
+                <h1>ultiDB</h1>
+                <h2>(A database for ultimate frisbee historical tournament and team data)</h2>
+                <h2>9-28-20</h2>
+            </div>
+            <br>
+           
+        
+           
+            <div class="block">
+                <h1 class="sub">motivation</h1>
+                <h2>
+                    The problem: If I want to know the score of semis at college ultimate frisbee nationals from 
+                    2013, that info is pretty hard to find. How do we solve this?
+                    <br>
+                    <br>
+                    UltiDB is a community run, crowdsourced, wiki-style site for the 
+                    sport of Ultimate frisbee. Users can easily search for and retrieve historical 
+                    tournament and team data through an intuitive and friendly user interface.
+                </h2>
+            </div>
+            
+            <div class="block">
+                <h1 class="sub">architecture</h1>
+                <h2>
+                    Our backend will include a Django Rest Framework (DRF) serving data through REST API. We will implement
+                    a web scraper to pull data from USA Ultimate, twitter, etc. Finally,
+                    we will have a user interface for the scraper and maintain a Content Management System (CMS).
+                    <br>
+                    <br>
+                    Our database architecture will involve models representing teams, tournaments, players, seasons, games,
+                    and coaches.
+                    <br>
+                    <br>
+                    Our frontend will be a React application that pulls data from the DRF. It will involve a beautiful, simple design 
+                    that allows users to easily and quickly find the information they need.
+                </h2>
+                
+            </div>
+            <div class="block">
+                <h1 class="sub">development</h1>
+                <h2>We are currently kicking off this project and in the beginning states of planning and development. I am working
+                    with a team of four with three of my fellow peers. We will be working on this site throughout the fall, and we hope
+                    to have our first release sometime in the next two months. When the site is up and running, I will post a link on
+                    this page! Check back soon!
+                </h2>
+            </div>
+        
+            <br>
+            
+
+        </div>
+
+    </div>
+
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("/nav.html");
+        });
+    </script>
+
+</body>
+
+
+
+</html>
