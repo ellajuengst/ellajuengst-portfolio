@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/dev-page.css">
+    <link rel="stylesheet" href="https://use.typekit.net/sxg7krs.css"> 
+    <link rel="stylesheet" href="https://use.typekit.net/sxg7krs.css">
+    <link rel="icon" href="/images/iceberg-logo.svg">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <title>ella juengst | 2048</title>
+</head>
+
+<body id="bod">
+    <div id="nav-placeholder"></div>
+
+    <div id="bg">
+        
+        <header>
+            <a href="/index.html"><img src="/images/Logo.jpg" class="logo"></a>
+            <img src="/images/Menu.svg" class="menu-btn" id="open-menu">
+        </header>
+        <div class="container">
+            <div class="block title">
+                <h1>developing the game 2048</h1>
+            </div>
+            <br>
+            <div class="block contact">
+                <a href="https://github.com/ellajuengst/2048" target="_blank"><button class="contact-btn">view on github</button></a>
+            </div>
+        
+           
+            <div class="block">
+                <h1 class="sub">summary</h1>
+                <h2>In my web development class, I was tasked with creating the game 2048. I built the game using JavaScript and some
+                    jquery functionality. I separated the model, which contains all of th game logic, from the view, which generates the 
+                    dynamic DOM elements that implement the user interface. I'd love for you to check out my code on github using the link above!
+                </h2>
+            </div>
+            
+            
+            <div class="block">
+                <div class="image">
+                    <img src="/images/2048-image.png">
+                </div>
+                
+            </div>
+            <br>
+            
+
+        </div>
+
+    </div>
+
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("/nav.html");
+        });
+    </script>
+
+</body>
+
+
+
+</html>
