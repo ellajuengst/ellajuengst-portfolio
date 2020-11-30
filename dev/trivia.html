@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/dev-page.css">
+    <link rel="stylesheet" href="https://use.typekit.net/sxg7krs.css"> 
+    <link rel="stylesheet" href="https://use.typekit.net/sxg7krs.css">
+    <link rel="icon" href="/images/iceberg-logo.svg">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <title>ella juengst | trivia</title>
+</head>
+
+<body id="bod">
+    <div id="nav-placeholder"></div>
+
+    <div id="bg">
+        
+        <header>
+            <a href="/index.html"><img src="/images/Logo.jpg" class="logo"></a>
+            <img src="/images/Menu.svg" class="menu-btn" id="open-menu">
+        </header>
+        <div class="container">
+            <div class="block title">
+                <h1>React and Firebase Trivia Web App</h1>
+            </div>
+            <br>
+            <div class="block contact">
+                <a style="margin-right: 1em;" href="https://trivia426.web.app/" target="_blank"><button class="contact-btn">view site</button></a>
+
+                <a href="https://github.com/426final/trivia" target="_blank"><button class="contact-btn">github</button></a>
+            </div>
+            
+        
+           
+            <div class="block">
+                <h1 class="sub">summary</h1>
+                <h2>In my web development class, I was tasked with creating a web app using an API and backend to store user data. My group project partner and I decided to use a public trivia API which can be found 
+                    <a href="https://opentdb.com/">here</a>. We pull trivia questions from the API for users to practice their trivia skills. Users can choose from different
+                    categories, levels of difficulty, and types of questions. They can save questions that they enjoy to their portfolio page and edit their user information.
+                    We implemented the front end using React framework and Bootstrap for basic styling. I then futher customized the styles by adding my own custom CSS. For the back end, we used Firebase 
+                    to store all our user information and saved questions.
+                </h2>
+            </div>
+
+            
+            
+            <div class="block">
+                <div class="image">
+                    <img src="/images/trivia-ss1.png">
+                </div>
+                <div class="image">
+                    <img src="/images/trivia-ss2.png">
+                </div>
+                <div class="image">
+                    <img src="/images/trivia-ss3.png">
+                </div>
+                
+            </div>
+            <br>
+            
+
+        </div>
+
+    </div>
+
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("/nav.html");
+        });
+    </script>
+
+</body>
+
+
+
+</html>
