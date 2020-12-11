@@ -302,4 +302,73 @@ body .gallery .artwork {
   max-width: 100%;
   max-height: 100%;
 }
+
+.pol_small {
+  -ms-grid-row: 2;
+  grid-row: 2;
+  grid-column: col2-start / col2-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 .7em;
+}
+
+@media (min-width: 768px) {
+  .pol_small {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media (min-width: 1050px) {
+  .pol_small {
+    display: none;
+  }
+}
+
+.pol_small .polar {
+  width: 90%;
+}
+
+@media (min-width: 768px) {
+  .pol_small .polar {
+    width: 80%;
+  }
+}
+
+.pol_large {
+  display: none;
+}
+
+@media (min-width: 1050px) {
+  .pol_large {
+    grid-row: row3-start / row3-end;
+    grid-column: col1-start / col1-end;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
+
+@media (min-width: 1050px) {
+  .pol_large .polar {
+    width: 40%;
+  }
+}
 /*# sourceMappingURL=dev.css.map */
