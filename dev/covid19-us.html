@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/dev-page.css">
+    <link rel="stylesheet" href="https://use.typekit.net/sxg7krs.css"> 
+    <link rel="stylesheet" href="https://use.typekit.net/sxg7krs.css">
+    <link rel="icon" href="/images/iceberg-logo.svg">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <title>ella juengst | COVID-19 U.S.</title>
+</head>
+
+<body id="bod">
+    <div id="nav-placeholder"></div>
+
+    <div id="bg">
+        
+        <header>
+            <a href="/index.html"><img src="/images/Logo.jpg" class="logo"></a>
+            <img src="/images/Menu.svg" class="menu-btn" id="open-menu">
+        </header>
+        <div class="container">
+            <div class="block title">
+                <h1>A COVID-19 Data Visualization</h1>
+            </div>
+            <br>
+            <div class="block contact">
+                <a href="https://visualize-covid19-us.herokuapp.com/" target="_blank"><button class="contact-btn">view site</button></a>
+            </div>
+        
+           
+            <div class="block">
+                <h1 class="sub">summary</h1>
+                <h2>I developed this app due to the on going crisis of COVID-19. COVID-19 U.S. serves to provide coronavirus data in a way that is visually comprehensible. It focuses on U.S. cases and deaths given as totals and broken down by state. 
+                </h2>
+            </div>
+
+            <div class="block">
+                <h1 class="sub">implementation</h1>
+                <h2>To implement this site, I created a web scraper using a Node/Express backend and utilizing a library called Puppeteer. The backend scrapes Worldometer’s Coronavirus tracking data and then sends that data to a React front end. The React app stores the COVID-19 data locally in order to prevent constant scraping. The front end also dynamically renders the SVG’s based on the latest numbers. I used Bootstrap and my own custom Sass styling to design the front end.  
+                </h2>
+            </div>
+
+            <div class="block">
+                <h1 class="sub">discussion</h1>
+          
+                <h2>This project is ongoing, and in a future release, I am working to make several changes. First, I am planning on caching the fetched data in my Express back end, instead of the front end. This way, the data can be accessed by multiple users without load time. I will create a timer, so that the data refreshes every 20 minutes, in order to prevent outdated numbers from showing. Second, I am looking to change my SVG’s to show the numbers per capita, rather than total number of cases and deaths. This will prevent the states with the largest populations from being at the top of the lists. Stay tuned for these updates.  
+                </h2>
+            </div>
+            
+            
+            <div class="block">
+                <div class="image">
+                    <img src="/images/covid19-us-img1.png">
+                </div>
+                <div class="image">
+                    <img src="/images/covid19-us-img2.png">
+                </div>
+                
+            </div>
+            <br>
+            
+
+        </div>
+
+    </div>
+
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("/nav.html");
+        });
+    </script>
+
+</body>
+
+
+
+</html>
