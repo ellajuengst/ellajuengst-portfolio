@@ -342,4 +342,8 @@ body .input-checkbox {
 .contact .contact-btn:hover {
   background-color: #BC7F4C;
 }
+
+.resume-svg {
+  max-width: 1200px;
+}
 /*# sourceMappingURL=resume.css.map */

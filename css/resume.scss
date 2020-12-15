@@ -173,7 +173,7 @@ body {
     .about {
         grid-row: 2;
         padding: 3em 2em 1em 2em;
-
+        
         @include tablet {
             grid-row: row2-start / row2-end;
             padding: 4em 3em; 
@@ -311,4 +311,8 @@ body {
         background-color: #BC7F4C;
     }
 
+}
+
+.resume-svg {
+    max-width: 1200px;
 }
