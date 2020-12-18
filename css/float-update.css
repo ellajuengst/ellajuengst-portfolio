@@ -89,16 +89,16 @@ body .title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
   z-index: 1;
   color: #0C2553;
   margin-top: 2em;
@@ -142,7 +142,7 @@ body h1 {
 
 @media (min-width: 1050px) {
   body h1 {
-    font-size: 2.5em;
+    font-size: 3em;
     letter-spacing: 3px;
   }
 }
@@ -169,6 +169,33 @@ body h2 {
   }
 }
 
+body .image-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  body .image-sec {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 body .image {
   width: 100%;
   display: -webkit-box;
@@ -177,19 +204,13 @@ body .image {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 3em 0;
 }
 
-body .image img {
-  width: 60%;
-  margin: 0;
-}
-
 body .contact {
-  padding: 2em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,6 +220,10 @@ body .contact {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 body .contact .contact-btn {
@@ -220,11 +245,33 @@ body .contact .contact-btn {
   cursor: pointer;
   border: none;
   outline: none;
-  margin-right: 1em;
 }
 
 body .contact .contact-btn:hover {
   background-color: #BC7F4C;
+}
+
+body .img-holder {
+  width: 70%;
+  margin: 2em 2em;
+}
+
+@media (min-width: 1050px) {
+  body .img-holder {
+    width: 35%;
+  }
+}
+
+body .img-holder img {
+  width: 100%;
+}
+
+body a {
+  color: #EDBE96;
+}
+
+body a:hover {
+  color: #BC7F4C;
 }
 
 @media (min-width: 1050px) {
@@ -244,12 +291,4 @@ body .contact .contact-btn:hover {
             flex-direction: column;
   }
 }
-
-body a {
-  color: #EDBE96;
-}
-
-body a:hover {
-  color: #BC7F4C;
-}
-/*# sourceMappingURL=dev-page.css.map */
+/*# sourceMappingURL=float-update.css.map */
