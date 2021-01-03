@@ -1,38 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.4.0/css/all.css">
-    <link rel="stylesheet" type="text/css" href="css/resume.css">
-    <link rel="stylesheet" href="https://use.typekit.net/sxg7krs.css"> 
-    <link rel="stylesheet" href="https://use.typekit.net/sxg7krs.css">
-    <link rel="icon" href="images/iceberg-logo.svg">
-    <title>ella juengst | resume</title>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
-    <script src="main.js"></script>
-    
-</head>
-
-<body id="bod">
-    <div id="nav-placeholder"></div>
-    <script>
-        $(function(){
-             $("#nav-placeholder").load("nav.html");
-         });
-     </script>
-    <div id="bg">
-        
-
-        <header>
-            <a href="index.html"><img src="images/Logo.jpg" class="logo"></a>
-            <img src="images/Menu.svg" class="menu-btn" id="open-menu">
-        </header>
-
-        <section class="resume about">
-            <?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 24.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 612 792" style="enable-background:new 0 0 612 792;" xml:space="preserve">
@@ -63,13 +29,13 @@
 <text transform="matrix(1 0 0 1 518.5645 25.1428)" class="st5 st6">(571) 421-9248</text>
 <text transform="matrix(1 0 0 1 474.8137 40.8322)" class="st5 st6">ellajuengst@gmail.com</text>
 <g>
-	<a href="https://ellajuengst.github.io/" target="_blank"><text transform="matrix(1 0 0 1 491.9013 93.8793)" class="st7 st5 st4" style="text-decoration: underline;">ellajuengst@github.io</text></a>
+	<text transform="matrix(1 0 0 1 491.9013 93.8793)" class="st7 st5 st4" style="text-decoration: underline;">ellajuengst@github.io</text>
 </g>
 <g>
-	<a href="https://www.linkedin.com/in/ella-juengst/" target="_blank"><text transform="matrix(1 0 0 1 461.5632 111.1177)" class="st7 st5 st4" style="text-decoration: underline;">linkedin.com/in/ella-juengst</text></a>
+	<text transform="matrix(1 0 0 1 461.5632 111.1177)" class="st7 st5 st4" style="text-decoration: underline;">linkedin.com/in/ella-juengst</text>
 </g>
 <g>
-	<a href="https://github.com/ellajuengst" target="_blank"><text transform="matrix(1 0 0 1 484.3885 129.7342)" class="st7 st5 st4" style="text-decoration: underline;">github.com/ellajuengst</text></a>
+	<text transform="matrix(1 0 0 1 484.3885 129.7342)" class="st7 st5 st4" style="text-decoration: underline;">github.com/ellajuengst</text>
 </g>
 <rect x="19.1" y="160.4" class="st8" width="88.7" height="15.7"/>
 <text transform="matrix(1 0 0 1 19.1346 170.6326)" class="st7 st9 st6">EDUCATION</text>
@@ -90,7 +56,7 @@
 	<rect x="19.1" y="194.1" class="st8" width="280" height="12.6"/>
 	<text transform="matrix(1 0 0 1 19.1344 202.657)" class="st13 st10">BS in Computer Science </text>
 	<text transform="matrix(1 0 0 1 130.1344 202.657)" class="st2 st10">|</text>
-	<text transform="matrix(1 0 0 1 135.3344 202.657)" class="st13 st10"> Minor in Advertising and PR</text>
+	<text transform="matrix(1 0 0 1 132.3344 202.657)" class="st13 st10"> Minor in Advertising and PR</text>
 	<text transform="matrix(1 0 0 1 263.7408 202.6567)" class="st2 st10">— </text>
 	<text transform="matrix(1 0 0 1 276.3408 202.6567)" class="st5 st10">GPA: 3.9</text>
 	<rect x="19.1" y="218.2" class="st8" width="349.1" height="11.4"/>
@@ -131,7 +97,7 @@
 	<text transform="matrix(1 0 0 1 232.6093 386.0947)" class="st5 st6">Float </text>
 	<text transform="matrix(1 0 0 1 263.5093 386.0947)" class="st2 st6">| Chapel Hill, NC </text>
 	<rect x="19.1" y="390.4" class="st8" width="97.7" height="12.5"/>
-	<a href="https://www.floatup.co/" target="_blank"><text transform="matrix(1 0 0 1 19.1093 398.9033)" class="st7 st13 st10">www.floatup.co</text></a>
+	<text transform="matrix(1 0 0 1 19.1093 398.9033)" class="st7 st13 st10">www.floatup.co</text>
 	<rect x="19.1" y="403.2" class="st8" width="77.1" height="8.8"/>
 	<text transform="matrix(1 0 0 1 19.1097 410.0135)" class="st15 st2 st16">July 2020 - Present</text>
 	<rect x="19" y="415.7" class="st8" width="346.2" height="52.9"/>
@@ -270,28 +236,11 @@
 <text transform="matrix(1 0 0 1 476.6887 725.9093)" class="st2 st6">| </text>
 <text transform="matrix(1 0 0 1 482.4887 725.9093)" class="st2 st10">Node.js, Express, React.js</text>
 <rect x="397.6" y="646.1" class="st8" width="97.7" height="12.5"/>
-<a href="https://trivia426.web.app/" target="_blank"><text  transform="matrix(1 0 0 1 397.6204 654.6455)" class="st7 st13 st10">trivia426.web.app</text></a>
+<text transform="matrix(1 0 0 1 397.6204 654.6455)" class="st7 st13 st10">trivia426.web.app</text>
 <rect x="397.1" y="762" class="st8" width="189.7" height="21.2"/>
 <text transform="matrix(1 0 0 1 397.1093 768.8047)" class="st2 st14">Web scraper and COVID-19 data visualization.</text>
 <rect x="398.3" y="747.5" class="st8" width="57.9" height="8.8"/>
 <text transform="matrix(1 0 0 1 398.266 754.3015)" class="st15 st2 st16">December 2020</text>
 <rect x="398.3" y="732.9" class="st8" width="164.9" height="12.5"/>
-<a href="https://visualize-covid19-us.herokuapp.com/" target="_blank"><text  transform="matrix(1 0 0 1 398.2668 741.4894)" class="st7 st13 st10">visualize-covid19-us.herokuapp.com</text></a>
+<text transform="matrix(1 0 0 1 398.2668 741.4894)" class="st7 st13 st10">visualize-covid19-us.herokuapp.com</text>
 </svg>
-
-
-            
-            
-        </section>
-       
-
-
-    </div>
-
-   
-
-</body>
-
-
-
-</html>
