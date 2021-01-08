@@ -114,21 +114,29 @@ body {
         display: flex;
         // flex-direction: column;
         align-items: center;
-        justify-content: left;
+        justify-content: space-between;
         z-index: 1;
         color: color(blue1);
-        margin-top: 2em;
+        margin-top: .8em;
+        flex-direction: column;
+        text-align: center;
+        @include tablet {
+        flex-direction: row;
+        text-align: left;
 
+
+        }
+    
         h1 {
-            font-size: 3em;
+            font-size: 2em;
             letter-spacing: 2px;
             @include tablet {
-                font-size: 3.5em;
+                font-size: 2.5em;
                 letter-spacing: 3px;
             }
     
             @include desktop {
-                font-size: 4em;
+                font-size: 3em;
                 letter-spacing: 4px;
     
             }
@@ -214,16 +222,34 @@ body {
     }
 
     .img-holder {
-        width: 30%;
+       
         display: flex;
-        margin-top: 3em;
-        margin-bottom: 3em;
-        
-
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
         img {
-            width: 100%;
+            width: 60%;
             
         }
+    }
+    .img-holder2 {
+       
+        display: flex;
+        margin: 0;
+        flex-direction: row;
+        align-items: left;
+        justify-content: left;
+    
+        img {
+            width: 30%;
+            
+        }
+    }
+
+    #design-link:hover {
+        opacity: 50%;
     }
 
     a {

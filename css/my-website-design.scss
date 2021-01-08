@@ -99,7 +99,6 @@ body {
         
         
         @include tablet {
-            text-align: center;
             width: calc(100% - 4em);
             margin: 0 2em;
         }
@@ -149,7 +148,6 @@ body {
         @include tablet {
             font-size: 2.3em;
             letter-spacing: 2px;
-            text-align: center;
         }
 
         @include desktop {
@@ -169,7 +167,6 @@ body {
         color: color(blue1);
         @include tablet {
             font-size: 1.5em;
-            text-align: center;
         }
 
         @include desktop {
