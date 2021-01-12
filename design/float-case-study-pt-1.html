@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/float.css">
+    <link rel="stylesheet" href="https://use.typekit.net/sxg7krs.css"> 
+    <link rel="stylesheet" href="https://use.typekit.net/sxg7krs.css">
+    <link rel="icon" href="/images/iceberg-logo.svg">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
+    <title>ella juengst | float ui explorations</title>
+</head>
+
+<body id="bod">
+    <div id="nav-placeholder"></div>
+
+    <div id="bg">
+        
+        <header>
+            <a href="/index.html"><img src="/images/Logo.jpg" class="logo"></a>
+            <img src="/images/Menu.svg" class="menu-btn" id="open-menu">
+        </header>
+        <div class="container">
+
+        
+            <div class="block title">
+                <h1>Float Case Study Part 1</h1>
+                <h2>date: 1-12-21</h2>
+            </div>
+
+            <div class="block">
+                <h4><em>This project is ongoing, and I am still in the process of designing and building out the prototype for Float’s new web interface. However, I wanted to share a bit about our UX process and the work we have done so far.
+                </em></h4>
+            </div>
+
+            <div class="block">
+                <h1 class="sub">Background</h1>
+                <h2>Float is an innovative startup that connects homeowners, businesses, and community centers with renters looking for monthly parking. The goal of the company is to reduce wasted space in urban centers by allowing unused spots to be rented out to individuals. Float is very appealing to college students, who are looking for affordable monthly parking near campuses. As a UX intern, I worked to redesign Float’s website from the ground up, in order to create a more efficient and clear interface for both renters and hosts.
+                </h2>
+            </div>
+            <div class="block">
+                <h1 class="sub">Problem Statement</h1>
+                <h2>
+                    Float’s current site, which can be found here, is functional but not appealing or efficient. I worked with Krupa Patel, another UX intern, to create a list of weaknesses by studying the current UX and UI, to determine what areas of the site needed to be changed in the revamp. Here is a list of user experience items I identified that should be improved as well as some new features the Float team wanted to include in the new site: 
+                </h2>
+                <ul>
+                    <h2><em>User Experience Weaknesses</em></h2>
+                    <li><h2>Too “host-focused”: the site was difficult to navigate as a renter because a lot of the features were targeted towards hosts using the site</h2>
+                    </li>
+                    <li><h2>Redundancy in the dashboard: the dashboard pages contained a lot of redundant information, making it confusing for users to comprehend the data.</h2></li>
+                    <li><h2>Lacking a sense of direction on login: The site did not provide a clear course of action for new users, you have to click several buttons to search for spaces or list spaces.</h2></li>
+                    <li><h2>Poor data display: A lot of the data shown in tables is shown in an unappealing or confusing way.</h2> </li>
+                    <li><h2>Consistent navbar with relevant links to both dashboard and search pages</h2></li>
+                    <li><h2>Lacking information on users (profile, bio, ratings) which creates a sense of distrust</h2>  </li>
+                </ul>
+                <br>
+                <ul>
+                    <h2><em>User Interface Weaknesses</em></h2>
+                    <li><h2>Generic and unoriginal UI (illustrations, images)</h2>
+                    </li>
+                    <li><h2>Long paragraph texts are sometimes center aligned. This makes them more difficult to read.</h2></li>
+                    <li><h2>Lack of color or interesting UI elements beyond the homepage</h2></li>
+                    <li><h2>Outdated feel and look to the site’s UI elements</h2> </li>
+                    <li><h2>Hover interactions on buttons are too extreme</h2></li>
+                    
+                </ul>
+                <br>
+                <ul>
+                    <h2><em>New Feature Requests</em></h2>
+                    <li><h2>Internal messaging between hosts and renters</h2>
+                    </li>
+                    <li><h2>Public profile pages for users</h2></li>
+                    <li><h2>Ratings and reviews of hosts and users</h2></li>
+                    <li><h2>Cancellations by renters</h2> </li>
+                    <li><h2>Subscriptions status for spaces (active, upcoming, ended, cancelled)</h2></li>
+                    <li><h2>Search filtering and sorting options</h2>  </li>
+                    <li><h2>Map thumbnails</h2>  </li>
+                    <li><h2>Host editing capabilities once lot is posted</h2>  </li>
+                    
+                </ul>
+      
+                
+            </div>
+            <div class="block">
+                <h1 class="sub">Users and Audience</h1>
+                <h2>
+                    Float is currently based out of three college towns: Chapel Hill NC, Centre County PA, and Ann Arbor MI. Float’s users vary from college students to middle aged, working adults. We therefore needed to create a site that would work for a people with a wide range of backgrounds, economic statuses, and availability. We settled around creating a site that prioritizes clarity and efficiency, as many college students and business owners are not likely to spend much time on a site that is confusing and hard to navigate quickly.
+                </h2>
+                <h2>Krupa and I conducted several user studies, in which we interviewed users about their experience with the current site. We asked them to walk through 10 different tasks on the site and observed their process and when their pain points occurred. We also polled the current Float staff, to gauge their response to the current interface. The user studies gave us valuable feedback regarding other pitfalls of the site, including inability to specify more details when searching for a space and lack of efficiency in navigating around the site.</h2>
+                
+            </div>
+            <div class="block">
+                <h1 class="sub">Process</h1>
+                <h2>
+                    After studying the pitfalls of the current site and defining our users, we began the process of building our mockup. I focused my work on the dashboard pages, which is where the user can view and edit their bookings, listings, profile, account, and messages. The Float leadership team asked us to use Ant Design System for Figma and React, which would ease the transition to code for their engineers. 
+                </h2>
+                <h2>You can view the <a target="_blank" href="https://www.figma.com/file/UBytNvsLP4V3TZUi77iumk/Float-Dashboard?node-id=0%3A1">current mockup for Float’s dashboard pages on Figma.</a> I am still finalizing details and pages before I make the prototype. I believe the new pages accomplish many of the goals we aimed to achieve before beginning the design process, and I will explain several of them below.
+                </h2>
+               
+                <h2><em>1. A clear sense of direction when navigating the site</em></h2>
+                <h2>The new design provides two clear courses of action once a user logs in to their new account. In the old interface, a user had to make multiple clicks to reach the search pages, but the new design makes it very clear how to either rent or list a space. The dashboard navigation has clear list element titles and the top navbar allows users to switch between the search pages and the dashboard. Overall, we edited both the language and the structure of the site to allow for more clarity. Below, the old design is on the left and our new design is on the right.
+                </h2>
+
+                <div class="image-sec">
+                    <div class="img-holder">
+
+                        <img src="/images/old-float-dashboard-compare.png">
+                    </div>
+                    
+
+                    <div class="img-holder">
+                   
+
+                        <img src="/images/Float-dashboard-compare-01.png">
+                    </div>
+                </div>
+
+                <h2><em>2. Builds trust between renters and hosts</em></h2>
+                <h2>The new profile section allows for users to read about the host or renter they will be working with. Users provide their name, a bio, and school or work. The new review system also creates more transparency and allows for users to provide their own feedback regarding working with another user.
+                </h2>
+
+                <div class="image-sec">
+                    <div class="img-holder">
+                        <img src="/images/float-profile-01.png">
+                    </div>  
+                
+                </div>
+
+                <h2><em>3. A clean, consistent, and modern design palette</em></h2>
+                <h2>The new palette looks to give the site a professional, clean feel. The logo we created is more modern than the current logo, and it allows for Float to keep their company open to future expansions from exclusively parking/car related real estate. We also made small adjustments like left aligning text and adjusting hover states.
+                </h2>
+
+                <div class="image-sec">
+                    <div class="img-holder">
+                        <img src="/images/float-design-palette.svg">
+                    </div>  
+                
+                </div>
+
+                <h2><em>4. Successful implementation of new features</em></h2>
+                <h2>The new release will include many new features including cancellation capabilities, internal messaging, and profiles. I believe our designs successfully delivered these new functionalities in a user friendly format. They are both intuitive and aesthetically appealing. 
+                </h2>
+
+
+                <div class="image-sec">
+                    <div class="img-holder">
+                        <img src="/images/float-messages-01.png">
+                    </div>  
+                
+                </div>
+                
+                
+
+            </div>
+
+            <div class="block">
+                <h1 class="sub">Conclusion</h1>
+               <h2>Once I complete the dashboard prototype, I will be moving on to designing the search pages (unfortunately, Krupa could not continue the internship at Float through the winter, so I will be finishing the work she started this fall). Stay tuned for Part Two of this case study, where I will be elaborating more on our final designs and the outcome and results. 
+            </h2>
+                
+            </div>
+           
+            
+        </div>
+        
+
+    </div>
+
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("/nav.html");
+        });
+    </script>
+
+</body>
+
+
+
+</html>
