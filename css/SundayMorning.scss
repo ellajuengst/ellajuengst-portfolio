@@ -43,7 +43,8 @@ body {
         padding: 2em;
         display: grid;
         grid-template-rows: 8vh auto auto;
-
+    
+  
         @include tablet {
             grid-template-rows: 8vh auto auto; 
             grid-template-columns: 1fr;
